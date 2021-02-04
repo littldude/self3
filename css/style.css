@@ -210,16 +210,21 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button--buy {
-  margin: 50px auto 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px auto 0 auto;
   text-shadow: none;
   background: #FF61EF;
   box-shadow: 0px 4px 4px #FFEE54;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 .intro {
   position: relative;
   padding: 55px 0 102px 0;
-  background-image: url("../img/bg-intro.png");
+  background-image: url("../img/intro-bg.svg");
   background-repeat: no-repeat;
   background-position-x: 40%;
   background-position-y: 26%;
@@ -446,7 +451,7 @@ body {
   left: -15%;
 }
 .item--lb::after {
-  content: url("../img/ell-yell.png");
+  content: url("../img/ell-yell.svg");
   position: absolute;
   bottom: -56%;
   right: -65%;
@@ -465,7 +470,7 @@ body {
   left: -13%;
 }
 .item--lc::after {
-  content: url("../img/violet-ell.png");
+  content: url("../img/ell-viol.svg");
   position: absolute;
   bottom: -43%;
   left: -65%;
@@ -503,8 +508,8 @@ body {
   padding: 120px 0 140px 0;
   background-image: url("../img/Эллипс 8.png");
   background-repeat: no-repeat;
-  background-position-x: 31%;
-  background-position-y: 308%;
+  background-position-x: 34%;
+  background-position-y: -147%;
   overflow: hidden;
 }
 .buy__inner {
@@ -519,7 +524,23 @@ body {
   content: url("../img/Эллипс 9.png");
   right: -3%;
   top: 20%;
-  z-index: 1000;
+  z-index: -1000;
+}
+.buy__form {
+  margin-top: 60px;
+}
+.buy__input {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 70px;
+  font-size: 18px;
+  font-family: "Gotham Pro";
+  padding: 20px;
+  color: #231F20;
+  box-shadow: 0px 4px 4px #FF61EF;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
@@ -575,6 +596,21 @@ body {
   margin-bottom: 5px;
 }
 
+@media (max-width: 1794px) {
+  .intro__img {
+    right: 38%;
+  }
+}
+@media (max-width: 1598px) {
+  .intro__img {
+    right: 35%;
+  }
+}
+@media (max-width: 1478px) {
+  .intro__img {
+    right: 33%;
+  }
+}
 @media (max-width: 1366px) {
   .container {
     padding: 0 1%;
@@ -597,6 +633,11 @@ body {
 
   .course__img {
     width: 47%;
+  }
+}
+@media (max-width: 1218px) {
+  .intro__img {
+    right: 27%;
   }
 }
 @media (max-width: 1112px) {
@@ -676,6 +717,10 @@ body {
     top: -5%;
     right: -200px;
   }
+
+  .buy__input {
+    width: 60%;
+  }
 }
 @media (max-width: 834px) {
   .header {
@@ -709,6 +754,9 @@ body {
   .button {
     margin: 445px auto 0 auto;
   }
+  .button--buy {
+    margin-top: 20px;
+  }
 
   .intro {
     padding: 55px 0 130px 0;
@@ -740,7 +788,7 @@ body {
   }
 
   .course {
-    padding: 5%;
+    padding: 70px 5%;
   }
   .course__inner {
     flex-direction: column;
@@ -827,6 +875,10 @@ body {
     font-size: 38px;
     line-height: 43px;
   }
+  .title--buy {
+    width: auto;
+    padding: 0 7%;
+  }
 
   .list {
     width: auto;
@@ -880,6 +932,13 @@ body {
   .autor__img {
     width: 100%;
   }
+
+  .buy__inner {
+    padding: 10% 5%;
+  }
+  .buy__input {
+    width: 80%;
+  }
 }
 @media (max-width: 568px) {
   .program {
@@ -921,6 +980,25 @@ body {
   .none {
     display: none;
   }
+
+  .footer {
+    padding: 65px 0;
+  }
+  .footer__inf {
+    padding-top: 0;
+  }
+
+  .review {
+    padding: 60px 0 120px 0;
+  }
+
+  .buy__input {
+    width: 90%;
+  }
+
+  .button--buy {
+    width: 90%;
+  }
 }
 @media (max-width: 414px) {
   .subtitle {
@@ -932,6 +1010,7 @@ body {
   }
 
   .title {
+    padding: 0 10%;
     font-size: 22px;
     line-height: 25px;
   }
@@ -953,6 +1032,10 @@ body {
 
   .button {
     margin: 395px auto 0 auto;
+  }
+  .button--buy {
+    margin-top: 20px;
+    width: 95%;
   }
 
   .intro {
@@ -978,6 +1061,20 @@ body {
   .review__inner--item {
     padding: 25px 32px;
   }
+
+  .buy {
+    padding: 60px 0 80px 0;
+  }
+  .buy__input {
+    width: 95%;
+  }
+  .buy__inner img {
+    width: 90%;
+  }
+
+  .autor {
+    padding: 20% 5%;
+  }
 }
 @media (max-width: 375px) {
   .subtitle--top {
@@ -988,6 +1085,7 @@ body {
   .title {
     font-size: 22px;
     line-height: 25px;
+    padding: 0 8%;
   }
   .title--main {
     margin-bottom: 20px;
@@ -1011,6 +1109,10 @@ body {
   .button {
     margin: 350px auto 0 auto;
   }
+  .button--buy {
+    width: 100%;
+    margin-top: 20px;
+  }
 
   .about__inner--item {
     margin-bottom: 25px;
@@ -1018,5 +1120,9 @@ body {
   .about__inner .item__img {
     width: 25px;
     height: 25px;
+  }
+
+  .buy__input {
+    width: 100%;
   }
 }
