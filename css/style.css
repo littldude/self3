@@ -443,23 +443,32 @@ body {
 .item {
   position: relative;
 }
-.item--lt::before {
-  content: url("../img/review/review-1.png");
+.item--lt {
+  position: relative;
+}
+.item--lt img {
   position: absolute;
   top: -30%;
   left: -7%;
+  display: block;
+  width: 97px;
+  height: 97px;
 }
-.item--rt::before {
-  content: url("../img/review/review-2.png");
+.item--rt img {
+  display: block;
+  width: 122px;
+  height: 109px;
   position: absolute;
   top: -10%;
   right: -10%;
 }
-.item--lb::before {
-  content: url("../img/review/review-3.png");
+.item--lb img {
+  display: block;
   position: absolute;
   bottom: -20%;
   left: -15%;
+  width: 151px;
+  height: 131px;
 }
 .item--lb::after {
   content: url("../img/ell-yell.svg");
@@ -468,17 +477,21 @@ body {
   right: -65%;
   z-index: -100;
 }
-.item--rc::before {
-  content: url("../img/review/review-4.png");
+.item--rc img {
+  display: block;
   position: absolute;
   top: 20%;
   right: -10%;
+  width: 111px;
+  height: 137px;
 }
-.item--lc::before {
-  content: url("../img/review/review-5.png");
+.item--lc img {
+  display: block;
   position: absolute;
   top: 10%;
   left: -13%;
+  width: 138px;
+  height: 135px;
 }
 .item--lc::after {
   content: url("../img/ell-viol.svg");
@@ -520,24 +533,22 @@ body {
   background-image: url("../img/Эллипс 8.png");
   background-repeat: no-repeat;
   background-position-x: 34%;
-  background-position-y: -147%;
+  background-position-y: -275%;
   overflow: hidden;
 }
 .buy__inner {
   padding: 30px 0;
 }
 .buy__inner--item {
+  margin: 0 auto;
   width: 270px;
 }
-.buy::after {
-  position: absolute;
-  content: url("../img/Эллипс 9.png");
-  right: -3%;
-  top: 20%;
-  z-index: -1000;
+.buy__img {
+  margin: 0 auto;
+  display: block;
 }
 .buy__form {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .buy__input {
   display: block;
@@ -550,10 +561,11 @@ body {
   color: #231F20;
   box-shadow: 0px 4px 4px #FF61EF;
   text-decoration: none;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px #231F20 solid;
 }
 
 .footer {
+  position: relative;
   padding-bottom: 95px;
 }
 .footer__inner {
@@ -591,6 +603,13 @@ body {
   width: 71px;
   height: 3px;
   background-color: #231F20;
+}
+.footer::after {
+  position: absolute;
+  content: url("../img/Эллипс 9.png");
+  right: 0%;
+  top: -93%;
+  z-index: -1000;
 }
 .footer__inf {
   font-family: "Gotham Pro";
@@ -644,6 +663,10 @@ body {
   .course__img {
     width: 47%;
   }
+
+  .bonus {
+    margin-top: 5%;
+  }
 }
 @media (max-width: 1218px) {
   .intro__img {
@@ -673,6 +696,14 @@ body {
 
   .item--lc::after {
     left: -53%;
+  }
+
+  .bonus {
+    margin-top: 17%;
+  }
+
+  .bonus-s {
+    margin-top: 38%;
   }
 }
 @media (max-width: 1024px) {
@@ -711,6 +742,14 @@ body {
   .item--lb::after {
     right: -58%;
   }
+
+  .bonus {
+    margin-top: 7%;
+  }
+
+  .bonus-s {
+    margin-top: 29%;
+  }
 }
 @media (max-width: 991px) {
   .header__inner {
@@ -728,11 +767,23 @@ body {
     right: -200px;
   }
 
+  .program__inner--item {
+    padding: 30px 35px;
+  }
+
   .buy__input {
     width: 60%;
   }
 }
 @media (max-width: 834px) {
+  .bonus {
+    margin-top: 0;
+  }
+
+  .bonus-s {
+    margin-top: 0;
+  }
+
   .header {
     display: none;
   }
@@ -743,6 +794,9 @@ body {
 
   .text--bottom {
     display: none;
+  }
+  .text--program {
+    margin-top: 15px;
   }
 
   .title {
@@ -898,30 +952,34 @@ body {
     width: 60%;
   }
 
-  .item--lt::before {
-    content: url("../img/review-m-1.png");
+  .item--lt img {
     top: -10%;
     left: -5%;
+    width: 51px;
+    height: 51px;
   }
-  .item--rt::before {
-    content: url("../img/review-m-2.png");
+  .item--rt img {
     top: -5%;
     right: -5%;
+    width: 51px;
+    height: 45px;
   }
-  .item--lb::before {
-    content: url("../img/review-m-3.png");
+  .item--lb img {
     top: -5%;
     left: -5%;
+    width: 51px;
+    height: 44px;
   }
   .item--lb::after {
     content: url("../img/Эллипс 9.png");
     left: -60%;
     top: -220%;
   }
-  .item--rc::before {
-    content: url("../img/review-m-4.png");
+  .item--rc img {
     top: -5%;
     right: -5%;
+    width: 51px;
+    height: 64px;
   }
   .item--rc::after {
     position: absolute;
@@ -930,10 +988,11 @@ body {
     top: 0;
     z-index: -122;
   }
-  .item--lc::before {
-    content: url("../img/review-m-5.png");
+  .item--lc img {
     top: -5%;
     left: -5%;
+    width: 50px;
+    height: 49px;
   }
   .item--lc::after {
     display: none;
@@ -1076,6 +1135,7 @@ body {
   }
 
   .buy {
+    background-position-y: 174%;
     padding: 60px 0 80px 0;
   }
   .buy__input {
@@ -1113,6 +1173,10 @@ body {
   }
 }
 @media (max-width: 320px) {
+  .title--buy {
+    padding: 0px 7%;
+  }
+
   .intro {
     background-position-x: 50%;
     background-position-y: 62%;

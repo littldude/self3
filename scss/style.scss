@@ -426,28 +426,54 @@ body {
 .item {
     position: relative;
     &--lt {
-        &::before {
-            content: url('../img/review/review-1.png');
+        position: relative;
+        img {
             position: absolute;
             top: -30%;
             left: -7%;
+            display: block;
+            width: 97px;
+            height: 97px;
+            
         }
+        // &::before {
+        //     content: url('../img/review/rev/review-1.png');
+        //     position: absolute;
+        //     top: -30%;
+        //     left: -7%;
+        // }
     }
     &--rt {
-        &::before {
-            content: url('../img/review/review-2.png');
+        img {
+            display: block;
+            width: 122px;
+            height: 109px;
             position: absolute;
             top: -10%;
             right: -10%;
         }
+        // &::before {
+        //     content: url('../img/review/rev/review-2.png');
+        //     position: absolute;
+        //     top: -10%;
+        //     right: -10%;
+        // }
     }
     &--lb {
-        &::before {
-            content: url('../img/review/review-3.png');
+        img {
+            display: block;
             position: absolute;
             bottom: -20%;
             left: -15%;
+            width: 151px;
+            height: 131px;
         }
+        // &::before {
+        //     content: url('../img/review/rev/review-3.png');
+        //     position: absolute;
+        //     bottom: -20%;
+        //     left: -15%;
+        // }
         &::after {
             content: url('../img/ell-yell.svg');
             position: absolute;
@@ -457,20 +483,37 @@ body {
         }
     }
     &--rc {
-        &::before {
-            content: url('../img/review/review-4.png');
+        img {
+            display: block;
             position: absolute;
             top: 20%;
             right: -10%;
+            width: 111px;
+            height: 137px;
         }
+        // &::before {
+        //     content: url('../img/review/rev/review-4.png');
+        //     position: absolute;
+        //     top: 20%;
+        //     right: -10%;
+        // }
     }
     &--lc {
-        &::before {
-            content: url('../img/review/review-5.png');
+        img {
+            display: block;
             position: absolute;
             top: 10%;
             left: -13%;
+            width: 138px;
+            height: 135px;
         }
+        // &::before {
+        //     content: url('../img/review/rev/review-5.png');
+        //     width: 50px;
+        //     position: absolute;
+        //     top: 10%;
+        //     left: -13%;
+        // }
         &::after {
             content: url('../img/ell-viol.svg');
             position: absolute;
@@ -511,23 +554,28 @@ body {
     background-image: url('../img/Эллипс\ 8.png');
     background-repeat: no-repeat;
     background-position-x: 34%;
-    background-position-y: -147%;
+    background-position-y: -275%;
     overflow: hidden;
     &__inner {
         padding: 30px 0;
         &--item {
+            margin: 0 auto;
             width: 270px;
         }
     }
-    &::after {
-        position: absolute;
-        content: url('../img/Эллипс\ 9.png');
-        right: -3%;
-        top: 20%;
-        z-index: -1000;
+    &__img {
+        margin: 0 auto;
+        display: block;
     }
+    // &::after {
+    //     position: absolute;
+    //     content: url('../img/Эллипс\ 9.png');
+    //     right: -3%;
+    //     top: 55%;
+    //     z-index: -1000;
+    // }
     &__form {
-        margin-top: 60px;
+        margin-top: 30px;
     }
     &__input {
         display: block;
@@ -540,14 +588,12 @@ body {
         color: $dark;
         box-shadow: 0px 4px 4px $pink;
         text-decoration: none;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px $dark solid;
 
     }
-    // &__text {
-    //     position: absolute;
-    // }
 }
 .footer {
+    position: relative;
     padding-bottom: 95px;
     &__inner {
         position: relative;
@@ -584,6 +630,13 @@ body {
             height: 3px;
             background-color: $dark;
         }
+    }
+    &::after {
+        position: absolute;
+        content: url('../img/Эллипс\ 9.png');
+        right: 0%;
+        top: -93%;
+        z-index: -1000;
     }
     &__inf {
         font-family: 'Gotham Pro';
@@ -649,6 +702,9 @@ body {
             width: 47%;
         }
     }
+    .bonus {
+        margin-top: 5%;
+    }
 }
 @media(max-width: 1218px) {
     .intro {
@@ -690,6 +746,12 @@ body {
                 left: -53%;
             }
         }
+    }
+    .bonus {
+        margin-top: 17%;
+    }
+    .bonus-s {
+        margin-top: 38%;
     }
 }
 @media (max-width: 1024px) {
@@ -736,6 +798,12 @@ body {
             }
         }
     }
+    .bonus {
+        margin-top: 7%;
+    }
+    .bonus-s {
+        margin-top: 29%;
+    }
 }
 @media (max-width: 991px) {
     .header {
@@ -757,6 +825,13 @@ body {
             }
         }
     }
+    .program {
+        &__inner {
+            &--item {
+                padding: 30px 35px;
+            }
+        }
+    }
     .buy {
         &__input {
             width: 60%;
@@ -764,6 +839,12 @@ body {
     }
 }
 @media (max-width: 834px) {
+    .bonus {
+        margin-top: 0;
+    }
+    .bonus-s {
+        margin-top: 0;
+    }
     .header {
         display: none;
     }
@@ -773,6 +854,9 @@ body {
     .text {
         &--bottom {
             display: none;
+        }
+        &--program {
+            margin-top: 15px;
         }
     }
     .title {
@@ -938,24 +1022,27 @@ body {
     }
     .item {
         &--lt {
-            &::before {
-                content: url('../img/review-m-1.png');
+            img {
                 top: -10%;
                 left: -5%;
+                width: 51px;
+                height: 51px;
             }
         }
         &--rt {
-            &::before {
-                content: url('../img/review-m-2.png');
+            img {
                 top: -5%;
                 right: -5%;
+                width: 51px;
+                height: 45px;
             }
         }
         &--lb {
-            &::before {
-                content: url('../img/review-m-3.png');
+            img {
                 top: -5%;
                 left: -5%;
+                width: 51px;
+                height: 44px;
             }
             &::after {
                 content: url('../img/Эллипс\ 9.png');
@@ -964,10 +1051,11 @@ body {
             }
         }
         &--rc {
-            &::before {
-                content: url('../img/review-m-4.png');
+            img {
                 top: -5%;
                 right: -5%;
+                width: 51px;
+                height: 64px;
             }
             &::after {
                 position: absolute;
@@ -978,10 +1066,11 @@ body {
             }
         }
         &--lc {
-            &::before {
-                content: url('../img/review-m-5.png');
+            img {
                 top: -5%;
                 left: -5%;
+                width: 50px;
+                height: 49px;
             }
             &::after {
                 display: none;
@@ -1132,6 +1221,7 @@ body {
         }
     }
     .buy {
+        background-position-y: 174%;
         padding: 60px 0 80px 0;
         &__input {
             width: 95%;
@@ -1176,6 +1266,11 @@ body {
     }
 }
 @media (max-width: 320px) {
+    .title {
+        &--buy {
+            padding: 0px 7%;
+        }
+    }
     .intro {
         background-position-x: 50%;
         background-position-y: 62%;
