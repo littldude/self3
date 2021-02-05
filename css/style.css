@@ -221,6 +221,11 @@ body {
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.button:hover {
+  background: #FF61EF;
+  box-shadow: 0px 4px 4px #FFEE54;
+  transition: 0.2s linear;
+}
 .button--buy {
   font-size: 18px;
   font-weight: bold;
@@ -231,6 +236,11 @@ body {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+.button--buy:hover {
+  background: #231F20;
+  box-shadow: 0px 4px 4px #FFEE54;
+  transition: 0.2s linear;
 }
 
 .intro {
