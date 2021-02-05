@@ -443,7 +443,7 @@ body {
   margin-top: 30px;
 }
 .review__link {
-  color: #A383FF;
+  color: #FF61EF;
 }
 .review__link:hover {
   opacity: 0.7;
@@ -461,13 +461,13 @@ body {
   top: -30%;
   left: -7%;
   display: block;
-  width: 97px;
-  height: 97px;
+  width: 100px;
+  height: 122px;
 }
 .item--rt img {
   display: block;
-  width: 122px;
-  height: 109px;
+  width: 117px;
+  height: 113px;
   position: absolute;
   top: -10%;
   right: -10%;
@@ -477,8 +477,8 @@ body {
   position: absolute;
   bottom: -20%;
   left: -15%;
-  width: 151px;
-  height: 131px;
+  width: 134px;
+  height: 120px;
 }
 .item--lb::after {
   content: url("../img/ell-yell.svg");
@@ -492,16 +492,16 @@ body {
   position: absolute;
   top: 20%;
   right: -10%;
-  width: 111px;
-  height: 137px;
+  width: 97px;
+  height: 125px;
 }
 .item--lc img {
   display: block;
   position: absolute;
-  top: 10%;
-  left: -13%;
-  width: 138px;
-  height: 135px;
+  top: -7%;
+  left: -14%;
+  width: 139px;
+  height: 102px;
 }
 .item--lc::after {
   content: url("../img/ell-viol.svg");
@@ -509,6 +509,14 @@ body {
   bottom: -43%;
   left: -65%;
   z-index: -100;
+}
+.item--rtt img {
+  display: block;
+  width: 114px;
+  height: 115px;
+  position: absolute;
+  top: -5%;
+  right: -10%;
 }
 
 .autor {
@@ -963,16 +971,16 @@ body {
   }
 
   .item--lt img {
-    top: -10%;
+    top: -7%;
     left: -5%;
-    width: 51px;
-    height: 51px;
+    width: 47px;
+    height: 58px;
   }
   .item--rt img {
     top: -5%;
     right: -5%;
-    width: 51px;
-    height: 45px;
+    width: 59px;
+    height: 53px;
   }
   .item--lb img {
     top: -5%;
@@ -987,9 +995,9 @@ body {
   }
   .item--rc img {
     top: -5%;
-    right: -5%;
-    width: 51px;
-    height: 64px;
+    right: -7%;
+    width: 46px;
+    height: 59px;
   }
   .item--rc::after {
     position: absolute;
@@ -999,12 +1007,21 @@ body {
     z-index: -122;
   }
   .item--lc img {
-    top: -5%;
-    left: -5%;
-    width: 50px;
-    height: 49px;
+    top: -3%;
+    left: -10%;
+    width: 56px;
+    height: 41px;
   }
   .item--lc::after {
+    display: none;
+  }
+  .item--rtt img {
+    top: -7%;
+    right: -7%;
+    width: 51px;
+    height: 52px;
+  }
+  .item .none {
     display: none;
   }
 
@@ -1054,10 +1071,6 @@ body {
 
   .course__inner {
     padding: 40px 0 50px 0;
-  }
-
-  .none {
-    display: none;
   }
 
   .footer {
