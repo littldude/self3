@@ -240,7 +240,7 @@ body {
     background-position-y: 26%;
     overflow: hidden;
     &::after {
-        content: url('../img/Эллипс\ 8.png');
+        content: url('../img/yellow-ellips.png');
         position: absolute;
         top: 11%;
         right: -13%;
@@ -253,7 +253,7 @@ body {
     &__block {
         position: relative;
         &::before {
-            content: url('../img/Эллипс\ 8.png');
+            content: url('../img/yellow-ellips.png');
             position: absolute;
             top: -188px;
             left: -300px;
@@ -279,7 +279,7 @@ body {
         justify-content: space-between;
         z-index: 1000;
         &::before {
-            content: url('../img/Эллипс\ 9.png');
+            content: url('../img/violet-ellips.png');
             position: absolute;
             left: -400px;
             z-index: -1;
@@ -368,7 +368,7 @@ body {
         align-items: center;
         justify-content: space-between;
         &::before {
-            content: url('../img/Эллипс\ 8.png');
+            content: url('../img/yellow-ellips.png');
             position: absolute;
             top: -5%;
             right: -85px;
@@ -540,7 +540,7 @@ body {
 .buy {
     position: relative;
     padding: 120px 0 140px 0;
-    background-image: url('../img/Эллипс\ 8.png');
+    background-image: url('../img/yellow-ellips.png');
     background-repeat: no-repeat;
     background-position-x: 34%;
     background-position-y: -275%;
@@ -556,13 +556,6 @@ body {
         margin: 0 auto;
         display: block;
     }
-    // &::after {
-    //     position: absolute;
-    //     content: url('../img/Эллипс\ 9.png');
-    //     right: -3%;
-    //     top: 55%;
-    //     z-index: -1000;
-    // }
     &__form {
         margin-top: 30px;
     }
@@ -622,7 +615,7 @@ body {
     }
     &::after {
         position: absolute;
-        content: url('../img/Эллипс\ 9.png');
+        content: url('../img/violet-ellips.png');
         right: 0%;
         top: -93%;
         z-index: -1000;
@@ -1034,7 +1027,7 @@ body {
                 height: 44px;
             }
             &::after {
-                content: url('../img/Эллипс\ 9.png');
+                content: url('../img/violet-ellips.png');
                 left: -60%;
                 top: -220%;
             }
@@ -1048,7 +1041,7 @@ body {
             }
             &::after {
                 position: absolute;
-                content: url('../img/Эллипс\ 8.png');
+                content: url('../img/yellow-ellips.png');
                 right: -70%;
                 top: 0;
                 z-index: -122;
